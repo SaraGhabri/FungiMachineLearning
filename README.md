@@ -10,7 +10,23 @@ This web application allows users (farmers, agronomists, or general users) to up
 - Streamlit
 - MobileNetV2 for image classification
 
-This app allows users to detect fungal diseases in plant leaves by uploading images. It uses a MobileNetV2 deep learning model fine-tuned on a fungal leaf dataset.
+---
+
+## ⚙️ Step-by-Step Setup
+
+### 1️⃣ Prerequisites
+Make sure the following are installed:
+- Python ≥ 3.8  
+- Anaconda or Miniconda (recommended)  
+- Git  
+- VS Code  
+
+### 2️⃣ Create and Activate Virtual Environment
+```bash
+conda create -n streamlit_fungi python=3.8
+conda activate streamlit_fungi
+pip install streamlit tensorflow pillow numpy
+```
 
 ## 👨‍🔬 Model
 
