@@ -86,12 +86,58 @@ We used MobileNetV2 for its speed and efficiency. It's trained to recognize:
 - Cedar Rust
 - Healthy leaves
 
-## 🚀 Usage
+---
 
-1. Clone the repo
-2. Install dependencies from `requirements.txt` : pip install streamlit tensorflow pillow
-3. Run the app with:
+## 🧠 Why MobileNetV2?
 
+- ✅ Lightweight: Fast inference in a web app
+- ✅ High accuracy on small datasets
+- ✅ Pre-trained on ImageNet – perfect for transfer learning
+- ✅ Low CPU usage (no GPU needed for serving)
+
+### ❓Other Models Considered
+
+| Model         | Why not chosen                             |
+|---------------|---------------------------------------------|
+| VGG16/VGG19   | Large size, slow, outdated                 |
+| ResNet50      | Good accuracy, but slower and heavier      |
+| DenseNet121   | Good accuracy, but bulkier than MobileNetV2 |
+| EfficientNet  | More accurate but more tuning/time needed  |
+
+> ⚠️ EfficientNetB0 or DenseNet are good options with more data/GPU.
+
+---
+
+## 🧪 Dataset Info
+
+- Source: [Fungal leaf disease dataset (Mendeley)](https://data.mendeley.com/datasets/tywbtsjrjv/1)
+- Classes: 5  
+- Image size: 224x224  
+- Preprocessing: Normalization to [0, 1]  
+- Training: Transfer learning (MobileNetV2 fine-tuned)
+
+---
+
+## 🚀 Run the App
 ```bash
-conda activate streamlite_fungi
+conda activate streamlit_fungi
 streamlit run app.py
+```
+
+---
+
+## 🧑‍💻 GitHub Setup
+
+### Initialize Git Repository
+```bash
+git init
+git add .
+git commit -m "Initial commit - fungal disease detector"
+```
+
+### Push to GitHub
+```bash
+git remote add origin https://github.com/your-username/fungi-disease-streamlit.git
+git branch -M main
+git push -u origin main
+```
