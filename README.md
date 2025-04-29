@@ -15,8 +15,9 @@ We used MobileNetV2 for its speed and efficiency. It's trained to recognize:
 ## 🚀 Usage
 
 1. Clone the repo
-2. Install dependencies from `requirements.txt`
+2. Install dependencies from `requirements.txt` : pip install streamlit tensorflow pillow
 3. Run the app with:
 
 ```bash
+conda activate streamlite_fungi
 streamlit run app.py
