@@ -90,10 +90,16 @@ We used MobileNetV2 for its speed and efficiency. It's trained to recognize:
 
 ## 🧠 Why MobileNetV2?
 
-- ✅ Lightweight: Fast inference in a web app
-- ✅ High accuracy on small datasets
-- ✅ Pre-trained on ImageNet – perfect for transfer learning
-- ✅ Low CPU usage (no GPU needed for serving)
+You absolutely worked with a **Convolutional Neural Network (CNN)** in this project.
+
+Even though you used **MobileNetV2**, which is a pre-trained model from TensorFlow/Keras, it is fundamentally a deep CNN architecture. Specifically:
+
+- **MobileNetV2** is a lightweight CNN designed for mobile and embedded vision applications.
+- It uses **depthwise separable convolutions**, **inverted residual blocks**, and **linear bottlenecks** to reduce computational cost while maintaining performance.
+
+In your case, you likely used **transfer learning**, meaning you took this CNN's pre-trained convolutional base and either:
+- Fine-tuned its last layers on your fungal dataset, **or**
+- Froze the base and added custom fully connected layers for classification.
 
 ### ❓Other Models Considered
 
@@ -107,6 +113,9 @@ We used MobileNetV2 for its speed and efficiency. It's trained to recognize:
 > ⚠️ EfficientNetB0 or DenseNet are good options with more data/GPU.
 
 ---
+
+---
+
 
 ## 🧪 Dataset Info
 
