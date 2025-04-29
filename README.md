@@ -102,8 +102,6 @@ In your case, you likely used **transfer learning**, meaning you took this CNN's
 
 ---
 
----
-
 
 ## 🧪 Dataset Info
 
