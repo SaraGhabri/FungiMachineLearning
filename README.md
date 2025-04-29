@@ -1,5 +1,15 @@
 # 🍄 Fungal Leaf Disease Detection – Streamlit App
 
+## 📌 Project Description
+
+This web application allows users (farmers, agronomists, or general users) to upload images of plant leaves to detect fungal diseases using a trained deep learning model.
+
+### 🔧 Built With:
+- Python
+- TensorFlow / Keras
+- Streamlit
+- MobileNetV2 for image classification
+
 This app allows users to detect fungal diseases in plant leaves by uploading images. It uses a MobileNetV2 deep learning model fine-tuned on a fungal leaf dataset.
 
 ## 👨‍🔬 Model
