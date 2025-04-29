@@ -76,18 +76,6 @@ if uploaded_file is not None:
 
 ---
 
-## 👨‍🔬 Model
-
-We used MobileNetV2 for its speed and efficiency. It's trained to recognize:
-
-- Apple Scab
-- Apple Black Rot
-- Grape Black Rot
-- Cedar Rust
-- Healthy leaves
-
----
-
 ## 🧠 Why MobileNetV2?
 
 You absolutely worked with a **Convolutional Neural Network (CNN)** in this project.
