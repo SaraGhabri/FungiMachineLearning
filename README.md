@@ -15,19 +15,19 @@ This web application allows users (farmers, agronomists, or general users) to up
 ## ⚙️ Step-by-Step Setup
 
 ### 1️⃣ Prerequisites
-Make sure the following are installed:
+We make sure the following are installed:
 - Python ≥ 3.8  
 - Anaconda or Miniconda (recommended)  
 - Git  
 - VS Code  
 
-### 2️⃣ Create and Activate Virtual Environment
+### 2️⃣ We Create and Activate Virtual Environment
 ```bash
 conda create -n streamlit_fungi python=3.8
 conda activate streamlit_fungi
 pip install streamlit tensorflow pillow numpy
 ```
-### 3️⃣ Project Structure
+### 3️⃣ Our Project Structure
 Organize your project folder (e.g., `FungiFront`) like this:
 
 ```
@@ -78,15 +78,15 @@ if uploaded_file is not None:
 
 ## 🧠 Why MobileNetV2?
 
-You absolutely worked with a **Convolutional Neural Network (CNN)** in this project.
+We absolutely worked with a **Convolutional Neural Network (CNN)** in this project.
 
-Even though you used **MobileNetV2**, which is a pre-trained model from TensorFlow/Keras, it is fundamentally a deep CNN architecture. Specifically:
+Even though we used **MobileNetV2**, which is a pre-trained model from TensorFlow/Keras, it is fundamentally a deep CNN architecture. Specifically:
 
 - **MobileNetV2** is a lightweight CNN designed for mobile and embedded vision applications.
 - It uses **depthwise separable convolutions**, **inverted residual blocks**, and **linear bottlenecks** to reduce computational cost while maintaining performance.
 
-In your case, you likely used **transfer learning**, meaning you took this CNN's pre-trained convolutional base and either:
-- Fine-tuned its last layers on your fungal dataset, **or**
+In our case, we used **transfer learning**, meaning we took this CNN's pre-trained convolutional base and either:
+- Fine-tuned its last layers on our fungal dataset, **or**
 - Froze the base and added custom fully connected layers for classification.
 
 ### ❓Other Models Considered
