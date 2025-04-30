@@ -5,7 +5,7 @@ from PIL import Image
 import io
 
 # Load the trained model
-model = load_model("mobilenetv2_fungal_disease.h5")
+model = load_model("https://github.com/SaraGhabri/FungiMachineLearning/raw/refs/heads/main/mobilenetv2_fungal_disease.h5")
 
 st.title("Fungal Leaf Disease Classifier")
 st.write("Upload a leaf image to detect the fungal disease.")
