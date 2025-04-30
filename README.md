@@ -1,14 +1,18 @@
+Here’s your updated README with a **deployment section** added and a minor clarification in the introduction to reflect that it's deployed with Streamlit:
+
+---
+
 # 🍄 Fungal Leaf Disease Detection – Streamlit App
 
 ## 📌 Project Description
 
-This web application allows users (farmers, agronomists, or general users) to upload images of plant leaves to detect fungal diseases using a trained deep learning model.
+This **web application**, built and **deployed with Streamlit**, allows users (farmers, agronomists, or general users) to upload images of plant leaves to detect fungal diseases using a trained deep learning model.
 
 ### 🔧 Built With:
-- Python
-- TensorFlow / Keras
-- Streamlit
-- MobileNetV2 for image classification
+- Python  
+- TensorFlow / Keras  
+- Streamlit  
+- MobileNetV2 for image classification  
 
 ---
 
@@ -27,6 +31,7 @@ conda create -n streamlit_fungi python=3.8
 conda activate streamlit_fungi
 pip install streamlit tensorflow pillow numpy
 ```
+
 ### 3️⃣ Our Project Structure
 Organize your project folder (e.g., `FungiFront`) like this:
 
@@ -102,7 +107,6 @@ In our case, we used **transfer learning**, meaning we took this CNN's pre-train
 
 ---
 
-
 ## 🧪 Dataset Info
 
 - Source: [Fungal leaf disease dataset (Mendeley)](https://data.mendeley.com/datasets/tywbtsjrjv/1)
@@ -113,11 +117,27 @@ In our case, we used **transfer learning**, meaning we took this CNN's pre-train
 
 ---
 
-## 🚀 Run the App
+## 🚀 Run the App Locally
 ```bash
 conda activate streamlit_fungi
 streamlit run app.py
 ```
+
+---
+
+## ☁️ Deployment
+
+This project is **deployed using Streamlit Cloud**.
+
+To deploy your own version:
+
+1. Push your project to a public GitHub repository.
+2. Go to [Streamlit Community Cloud](https://streamlit.io/cloud) and sign in.
+3. Click **"New app"**, connect your GitHub, and select the repository and branch.
+4. Set the `app.py` as the main file.
+5. Click **"Deploy"** and wait for it to load!
+
+> ℹ️ Make sure `requirements.txt` is present in the repo so Streamlit Cloud can install dependencies.
 
 ---
 
@@ -136,3 +156,4 @@ git remote add origin https://github.com/your-username/fungi-disease-streamlit.g
 git branch -M main
 git push -u origin main
 ```
+
