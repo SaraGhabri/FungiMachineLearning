@@ -1,6 +1,4 @@
-Here’s your updated README with a **deployment section** added and a minor clarification in the introduction to reflect that it's deployed with Streamlit:
 
----
 
 # 🍄 Fungal Leaf Disease Detection – Streamlit App
 
